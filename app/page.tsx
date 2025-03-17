@@ -1,24 +1,24 @@
-import Image from "next/image";
+import Navbar from "./components/navbar";
+import About from "./components/about";
 
 export default function Home() {
   return (
     <div>
-      <header>ajlkja</header>
-      <section id="home" className="bg-pink-500 h-screen flex">
-        <div className="text-white p-10 border-1 border-black h-fit flex flex-col">
-          <span>Hello !</span>
-          <span> klajéefa jejféao iewjfoédfjvaoiej ocivj we oaiiojaeo aéosijf </span>
+      <Navbar/>
+      <About/>
+      <section id="skills" className="h-screen bg-(--secondary) flex flex-col">
+        <h1 className="pt-20 m-auto">Skills</h1>
+        <div className="divider border-t-1 border-black w-[50%] m-auto"></div>
+        <div>Frontend</div>
+        <div>Backend</div>
+        <div className="bg-(--foreground)">
+<img src="./html-5-Stroke-Rounded.png" alt="" className="h-15 w-15"/>
         </div>
-        <div>blablalblablalb klabkbjklaejrklva jalkergklaegv ekrj ke elkr lea vjaekjrkf dlkvoeriogja lkcvjoisjerk vkjeoirjga ojevnoeirn knvijeorg</div>
-        <div>Image</div>
       </section>
-      <section id="stack" className="h-screen">
+      <section id="projects" className="h-screen">
         blabalblabla
       </section>
-      <section id="portfolio" className="h-screen bg-pink-500">
-        blabalblabla
-      </section>
-      <section id="contact" className="h-screen">
+      <section id="contact" className="h-screen bg-(--secondary)">
         blabalblabla
       </section>
     </div>
