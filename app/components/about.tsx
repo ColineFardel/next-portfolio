@@ -4,7 +4,7 @@ export default function About() {
         <div className="m-20 mt-40 w-80 border-3 border-black h-fit flex flex-col">
           <div className="border-black border-b-3 w-full h-5">
             <div className="bg-[#f6f4ef] w-5 h-full border-r-3 border-black">
-              <img src="./multiplication-sign-Stroke-Rounded(2).png" alt="" />
+              <img src="./cross.png" alt="" />
             </div>
           </div>
           <div className="bg-[#f6f4ef] text-(--foreground) flex flex-col p-3">
