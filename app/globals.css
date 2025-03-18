@@ -33,14 +33,6 @@
   .nav-section.selected {
     @apply text-(--background) font-bold
   }
-
-  .section-title {
-    @apply text-xl font-bold pt-18 m-auto 
-  }
-
-  .divider {
-    @apply border-t-1 border-black w-[50%] m-auto
-  }
 }
 
 @media (prefers-color-scheme: dark) {
