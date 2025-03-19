@@ -37,6 +37,30 @@
   .skill-container {
     @apply  bg-(--foreground) text-(--secondary) rounded-lg p-5 text-center
   }
+
+  .icons-container {
+    @apply m-5 flex justify-around items-center
+  }
+
+  .icon-card {
+    @apply bg-(--secondary) rounded-lg w-[90px] h-[90px]
+  }
+
+  .icon-img{
+    @apply absolute
+  }
+
+  .icon-card:hover .icon-img{
+    @apply opacity-25
+  }
+
+  .hidden-text {
+    @apply text-(--foreground) opacity-0 text-sm m-auto
+  }
+
+  .icon-card:hover .hidden-text {
+    @apply opacity-100
+  }
 }
 
 @media (prefers-color-scheme: dark) {
