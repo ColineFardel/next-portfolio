@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <section id="about" className="h-screen flex">
-        <div className="m-20 mt-40 w-80 border-3 border-black h-fit flex flex-col">
+        <div className="shadow-[5px_5px_5px_0_rgba(30,30,30,0.25)] m-20 mt-40 w-80 border-3 border-black h-fit flex flex-col">
           <div className="border-black border-b-3 w-full h-5">
             <div className="bg-[#f6f4ef] w-5 h-full border-r-3 border-black">
               <img src="./cross.png" alt="" />

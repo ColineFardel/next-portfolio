@@ -33,6 +33,10 @@
   .nav-section.selected {
     @apply text-(--background) font-bold
   }
+
+  .skill-container {
+    @apply  bg-(--foreground) text-(--secondary) rounded-lg p-5 text-center
+  }
 }
 
 @media (prefers-color-scheme: dark) {
