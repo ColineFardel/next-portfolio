@@ -12,8 +12,8 @@ export default function IconCard({ icon, name, knowledge }: { icon: string, name
             <div className="hidden-text w-full h-full flex flex-col gap-2 items-center justify-center">
                 <div>{name}</div>
                 <div className="">
-                    {starArray.map((el) => <img className="inline" src="./star-full-light.svg" />)}
-                    {emptyArray.map((el) => <img className="inline" src="./star-empty-light.svg" />)}
+                    {starArray.map((el) => <img key={el} className="inline" src="./star-full-light.svg" />)}
+                    {emptyArray.map((el) => <img key={el} className="inline" src="./star-empty-light.svg" />)}
                 </div>
             </div>
         </div>
