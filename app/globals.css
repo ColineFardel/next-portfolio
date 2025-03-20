@@ -6,7 +6,12 @@
 :root {
   --background: #edd6d6;
   --foreground: #1e1e1e;
+  --white: #f6f4ef;
+  --black: #1e1e1e;
+  --primary: #edd6d6;
   --secondary: #cae4da;
+
+  --black-rgb: 30,30,30;
 }
 
 @theme inline {
@@ -60,6 +65,22 @@
 
   .icon-card:hover .hidden-text {
     @apply opacity-100
+  }
+
+  .full-container {
+    @apply  bg-(--white) border-3 border-(--foreground) shadow-[5px_5px_0_0_rgba(30,30,30,0.9)] w-fit h-fit
+  }
+
+  .top-bar {
+    @apply flex justify-between items-center border-b-3 gap-10
+  }
+
+  .bar-title {
+    @apply  font-bold text-xl
+  }
+
+  .close-container {
+    @apply border-2 border-(--foreground) bg-(--white) m-1
   }
 }
 
