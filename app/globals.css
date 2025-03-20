@@ -48,7 +48,7 @@
   }
 
   .icon-card {
-    @apply bg-(--secondary) rounded-lg w-[90px] h-[90px]
+    @apply bg-(--primary) w-[90px] h-[90px] shadow-[-3px_3px_0_0_rgba(30,30,30,0.9)]
   }
 
   .icon-img{
@@ -68,7 +68,7 @@
   }
 
   .full-container {
-    @apply  bg-(--white) border-3 border-(--foreground) shadow-[5px_5px_0_0_rgba(30,30,30,0.9)] w-fit h-fit
+    @apply  bg-(--white) border-3 border-(--foreground) shadow-[5px_5px_0_0_rgba(30,30,30,0.9)] h-fit
   }
 
   .top-bar {
@@ -76,7 +76,7 @@
   }
 
   .bar-title {
-    @apply  font-bold text-xl
+    @apply  font-bold
   }
 
   .close-container {

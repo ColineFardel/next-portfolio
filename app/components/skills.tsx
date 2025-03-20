@@ -1,5 +1,6 @@
 import Title from "./title";
 import IconCard from "./icon-card";
+import RetroWindow from "./retro-window";
 
 export default function Skills() {
 
@@ -100,12 +101,11 @@ export default function Skills() {
             <Title title="Skills" />
             <div className="grid grid-cols-8 grid-rows-2 gap-2 mx-7 my-auto">
                 {data.map((skillData) =>
-                    <div key={skillData.name} className={'skill-container ' + skillData.nbrCol}>
-                        <div className="text-lg font-bold">{skillData.name}</div>
-                        <div className="icons-container">
+                    <RetroWindow key={skillData.name} title={skillData.name} extraStyling={skillData.nbrCol} primary body={
+                        <div className="flex m-3 justify-around items-center">
                             {skillData.stack.map((item) => <IconCard key={item.icon} icon={item.icon} name={item.name} knowledge={item.knowledge} />)}
                         </div>
-                    </div>
+                    } />
                 )}
             </div>
 
