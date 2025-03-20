@@ -14,6 +14,7 @@ const geistMono = Geist_Mono({
 
 const saira = Saira({
   variable: "--font-saira",
+  weight: ['400', '700'],
   subsets: ["latin"],
 })
 
