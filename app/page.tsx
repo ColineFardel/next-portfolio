@@ -4,6 +4,7 @@ import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import Skills from "./components/skills";
 import Projects from "./components/projects";
+import Experiences from "./components/experiences";
 
 config.autoAddCss = false;
 
@@ -12,8 +13,9 @@ export default function Home() {
     <div>
       <Navbar />
       <About />
-      <Skills/>
-      <Projects/>
+      <Skills />
+      <Projects />
+      <Experiences />
       <section id="contact" className="h-screen bg-(--secondary)">
         blabalblabla
       </section>

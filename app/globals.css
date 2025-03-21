@@ -82,6 +82,10 @@
   .close-container {
     @apply border-2 border-(--foreground) bg-(--white) m-1
   }
+
+  .exp-body {
+    @apply p-3 font-bold h-90
+  }
 }
 
 @media (prefers-color-scheme: dark) {
