@@ -12,14 +12,14 @@ export default function Projects() {
         },
         {
             title: 'Recipes Website',
-            img: '',
+            img: './RecipesImg.png',
             description: 'A web app created with Angular to see all my recipes',
             link: 'https://github.com/ColineFardel/angular-recipes',
         },
         {
             title: 'Portfolio',
-            img: '',
-            description: 'This portfolio',
+            img: './PortfolioImg.png',
+            description: 'This portfolio made with NextJs',
             link: 'https://github.com/ColineFardel/next-portfolio',
         },
     ];

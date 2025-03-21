@@ -6,7 +6,10 @@ export default function ProjectCard({ project }: any) {
     return (
         <RetroWindow extraStyling="h-90 w-2/7" title={project.title} body={
             <div className="h-[92%] p-4 justify-between flex flex-col">
-                <div className="h-3/5 bg-(--secondary) border-(--black) border">Image</div>
+                <div className="h-3/5 bg-(--secondary) border-(--black) border overflow-hidden">
+                {project.img ? <img src={project.img} alt="" /> : ''}
+                
+                </div>
                 <div className="mt-2">
                     <div>{project.description}</div>
                 </div>
