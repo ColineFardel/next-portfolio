@@ -48,7 +48,7 @@
   }
 
   .icon-card {
-    @apply bg-(--primary) w-[90px] h-[90px] shadow-[-3px_3px_0_0_rgba(30,30,30,0.9)]
+    @apply bg-(--primary) w-[90px] h-[90px] shadow-[-3px_3px_0_0_rgba(30,30,30,0.9)] border-(--black) border
   }
 
   .icon-img{
