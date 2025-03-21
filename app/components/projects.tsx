@@ -5,22 +5,22 @@ export default function Projects() {
 
     const projects = [
         {
-            title: 'Project 1',
+            title: 'Qui est-ce ?',
             img: '',
-            description: 'Project blabla ljwj blalo eo slajib el fwlec.',
+            description: 'A browser game based on the game Qui est-ce',
             link: 'https://github.com/ColineFardel/angular-quiestce',
         },
         {
-            title: 'Project 2',
+            title: 'Recipes Website',
             img: '',
-            description: 'Project blabla ljwj blalo eo slajib el fwlec.',
-            link: 'bbb',
+            description: 'A web app created with Angular to see all my recipes',
+            link: 'https://github.com/ColineFardel/angular-recipes',
         },
         {
-            title: 'Project 3',
+            title: 'Portfolio',
             img: '',
-            description: 'Project blabla ljwj blalo eo slajib el fwlec.',
-            link: 'cc',
+            description: 'This portfolio',
+            link: 'https://github.com/ColineFardel/next-portfolio',
         },
     ];
 

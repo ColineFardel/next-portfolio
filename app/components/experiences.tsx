@@ -4,7 +4,7 @@ import Title from "./title";
 export default function Experiences() {
 
     return(
-        <section id="skills" className="h-screen bg-(--secondary) flex flex-col">
+        <section id="experiences" className="h-screen bg-(--secondary) flex flex-col">
             <Title primary title="Experiences"/>
             <div className="flex justify-around items-center h-full">
                 <RetroWindow extraStyling="w-2/7" primary title="Intern" body={

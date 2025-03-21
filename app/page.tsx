@@ -16,9 +16,6 @@ export default function Home() {
       <Skills />
       <Projects />
       <Experiences />
-      <section id="contact" className="h-screen bg-(--secondary)">
-        blabalblabla
-      </section>
     </div>
   );
 }

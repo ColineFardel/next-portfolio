@@ -10,15 +10,15 @@ export default function Navbar() {
     }
 
     const classSelected = (section: string) => {
-        return section === selected ? 'nav-section selected' : 'nav-section';
+        return section === selected ? 'nav-button active' : 'nav-button';
     }
 
     return (
-        <header className="fixed mt-5 left-[50%] transform-[translate(-50%,0)] bg-(--foreground) opacity-50 w-fit flex gap-5 pl-5 pr-5 rounded-md">
+        <header className="navbar">
             <a onClick={() => {clickSection('#about')}} href="#about" className={classSelected('#about')}>Home</a>
             <a onClick={() => {clickSection('#skills')}} href="#skills" className={classSelected('#skills')}>Skills</a>
             <a onClick={() => {clickSection('#projects')}} href="#projects" className={classSelected('#projects')}>Projects</a>
-            <a onClick={() => {clickSection('#contact')}} href="#contact" className={classSelected('#contact')}>Contact</a>
+            <a onClick={() => {clickSection('#experiences')}} href="#experiences" className={classSelected('#experiences')}>Experiences</a>
         </header>
     )
 }

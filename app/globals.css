@@ -26,19 +26,6 @@
     @apply bg-black text-white
   }
 
-  .nav-section {
-    @apply text-(--background)
-    
-  }
-
-  .nav-section:hover {
-    @apply text-(--secondary) font-bold
-  }
-
-  .nav-section.selected {
-    @apply text-(--background) font-bold
-  }
-
   .skill-container {
     @apply  bg-(--foreground) text-(--secondary) rounded-lg p-5 text-center
   }
@@ -48,7 +35,7 @@
   }
 
   .icon-card {
-    @apply bg-(--primary) w-[90px] h-[90px] shadow-[-3px_3px_0_0_rgba(30,30,30,0.9)] border-(--black) border
+    @apply my-10 bg-(--primary) w-[90px] h-[90px] shadow-[-3px_3px_0_0_rgba(30,30,30,0.9)] border-(--black) border
   }
 
   .icon-img{
@@ -68,7 +55,7 @@
   }
 
   .full-container {
-    @apply  bg-(--white) border-3 border-(--foreground) shadow-[5px_5px_0_0_rgba(30,30,30,0.9)] h-fit
+    @apply  bg-(--white) border-3 border-(--foreground) shadow-[5px_5px_0_0_rgba(30,30,30,0.9)]
   }
 
   .top-bar {
@@ -86,6 +73,24 @@
   .exp-body {
     @apply p-3 font-bold h-90
   }
+
+  .navbar {
+    box-shadow: 0 2px #fffdfc, 0 4px #cce9eb;
+    z-index: 1000;
+    @apply  fixed w-full bg-[#c0c0c0] w-fit flex gap-5 px-5 h-fit py-3
+  }
+
+  .nav-button {
+    box-shadow: -2px -2px #e0dede, -2px 0 #e0dede, 0 -2px #e0dede, -4px -4px white, -4px 0 white, 0 -4px white, 2px 2px #818181, 0 2px #818181, 2px 0 #818181, 2px -2px #e0dede, -2px 2px #818181, -4px 2px white, -4px 4px black, 4px 4px black, 4px 0 black, 0 4px black, 2px -4px white, 4px -4px black;
+  }
+
+  .nav-button.active {
+    box-shadow:  -2px -2px #818181, -2px 0 #818181, 0 -2px #818181, -4px -4px black, -4px 0 black, 0 -4px black, 2px 2px #e0dede, 0 2px #e0dede, 2px 0 #e0dede,  2px -2px #818181, -2px 2px #e0dede, -4px 2px black, -4px 4px white, 4px 4px white, 4px 0 white, 0 4px white, 2px -4px black, 4px -4px white;
+  }
+
+  .full-height {
+    height: inherit;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -93,10 +98,6 @@
     --background: #1e1e1e;
     --foreground: #edd6d6;
   }
-}
-
-* {
-  scroll-behavior: smooth;
 }
 
 body {
