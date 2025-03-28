@@ -99,7 +99,7 @@ export default function Skills() {
     return (
         <section id="skills" className="h-screen bg-(--secondary) flex flex-col">
             <Title primary title="Skills" />
-            <div className="grid grid-cols-8 grid-rows-2 gap-4 mx-7 my-auto">
+            <div className="grid grid-cols-8 grid-rows-2 gap-4 my-auto w-[70%] m-auto pb-30">
                 {data.map((skillData) =>
                     <RetroWindow key={skillData.name} title={skillData.name} extraStyling={skillData.nbrCol} primary body={
                         <div className="flex m-3 justify-around items-center">

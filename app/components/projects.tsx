@@ -27,7 +27,7 @@ export default function Projects() {
     return (
         <section id="projects" className="h-screen flex flex-col">
             <Title title="Projects" />
-            <div className="flex my-auto mx-10 gap-3 p-3 justify-around items-center">
+            <div className="flex gap-3 p-3 justify-around items-center w-[80%] m-auto pb-40">
                 {projects.map((project) => <ProjectCard key={project.link} project={project} />)}
             </div>
 

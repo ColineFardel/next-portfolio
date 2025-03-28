@@ -10,6 +10,9 @@
   --black: #1e1e1e;
   --primary: #edd6d6;
   --secondary: #cae4da;
+  --true-white: #FFF;
+  --light-gray: #fffefc;
+  --dark-grey: #d0cec9;
 
   --black-rgb: 30,30,30;
 }
@@ -75,17 +78,54 @@
   }
 
   .navbar {
-    box-shadow: 0 2px #fffdfc, 0 4px #cce9eb;
+    box-shadow: 0 2px #fffdfc, 0 4px #b7eaed;
     z-index: 1000;
-    @apply  fixed w-full bg-[#c0c0c0] w-fit flex gap-5 px-5 h-fit py-3
+    @apply  fixed w-full bg-(--white) w-fit flex gap-5 px-5 h-fit py-3 font-bold gap-18
   }
 
   .nav-button {
-    box-shadow: -2px -2px #e0dede, -2px 0 #e0dede, 0 -2px #e0dede, -4px -4px white, -4px 0 white, 0 -4px white, 2px 2px #818181, 0 2px #818181, 2px 0 #818181, 2px -2px #e0dede, -2px 2px #818181, -4px 2px white, -4px 4px black, 4px 4px black, 4px 0 black, 0 4px black, 2px -4px white, 4px -4px black;
+    padding: 2px;
+    box-shadow: 
+    -2px -2px var(--light-gray), 
+    -2px 0 var(--light-gray), 
+    0 -2px var(--light-gray), 
+    -4px -4px var(--true-white), 
+    -4px 0 var(--true-white), 
+    0 -4px var(--true-white), 
+    2px 2px var(--dark-grey), 
+    0 2px var(--dark-grey), 
+    2px 0 var(--dark-grey), 
+    2px -2px var(--light-gray), 
+    -2px 2px var(--dark-grey), 
+    -4px 2px var(--true-white), 
+    -4px 4px var(--black), 
+    4px 4px var(--black), 
+    4px 0 var(--black), 
+    0 4px var(--black), 
+    2px -4px var(--true-white), 
+    4px -4px var(--black);
   }
 
   .nav-button.active {
-    box-shadow:  -2px -2px #818181, -2px 0 #818181, 0 -2px #818181, -4px -4px black, -4px 0 black, 0 -4px black, 2px 2px #e0dede, 0 2px #e0dede, 2px 0 #e0dede,  2px -2px #818181, -2px 2px #e0dede, -4px 2px black, -4px 4px white, 4px 4px white, 4px 0 white, 0 4px white, 2px -4px black, 4px -4px white;
+    box-shadow:  
+    -2px -2px var(--dark-grey), 
+    -2px 0 var(--dark-grey), 
+    0 -2px var(--dark-grey), 
+    -4px -4px var(--black), 
+    -4px 0 var(--black), 
+    0 -4px var(--black), 
+    2px 2px var(--light-gray), 
+    0 2px var(--light-gray), 
+    2px 0 var(--light-gray),  
+    2px -2px var(--dark-grey), 
+    -2px 2px var(--light-gray), 
+    -4px 2px var(--black), 
+    -4px 4px var(--true-white), 
+    4px 4px var(--true-white), 
+    4px 0 var(--true-white), 
+    0 4px var(--true-white), 
+    2px -4px var(--black), 
+    4px -4px var(--true-white);
   }
 
   .full-height {

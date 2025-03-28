@@ -6,16 +6,19 @@ export default function Experiences() {
     return(
         <section id="experiences" className="h-screen bg-(--secondary) flex flex-col">
             <Title primary title="Experiences"/>
-            <div className="flex justify-around items-center h-full">
+            <div className="flex justify-around items-center h-full w-[80%] m-auto pb-40">
                 <RetroWindow extraStyling="w-2/7" primary title="Intern" body={
                     <div className="exp-body">
                         <p>C:Windows&gt;company</p>
                         <p>HES-SO Valais-Wallis</p>
+                        <br />
                         <p>C:Windows&gt;period</p>
                         <p>2021</p>
+                        <br />
                         <p>C:Windows&gt;tasks</p>
                         <p>Research</p>
                         <p>Presentation clients</p>
+                        <br />
                         <p>C:Windows&gt;_</p>
                     </div>
                 }/>
@@ -23,13 +26,16 @@ export default function Experiences() {
                     <div className="exp-body">
                     <p>C:Windows&gt;company</p>
                     <p>Fiducial Winbiz</p>
+                    <br />
                     <p>C:Windows&gt;period</p>
                     <p>2021-2022</p>
+                    <br />
                     <p>C:Windows&gt;tasks</p>
                     <p>Development web app for accountability</p>
                     <p>Documentation Swagger for REST API</p>
                     <p>Development admin page in React</p>
                     <p>Development connection features in PHP Laravel</p>
+                    <br />
                     <p>C:Windows&gt;_</p>
                 </div>
                 }/>
@@ -37,11 +43,14 @@ export default function Experiences() {
                     <div className="exp-body">
                     <p>C:Windows&gt;company</p>
                     <p>Utopix</p>
+                    <br />
                     <p>C:Windows&gt;period</p>
                     <p>2022-2024</p>
+                    <br />
                     <p>C:Windows&gt;tasks</p>
                     <p>Development PLM for luxury clock industry</p>
                     <p>Adaptation survey feature both backend and frontend</p>
+                    <br />
                     <p>C:Windows&gt;_</p>
                 </div>
                 }/>
