@@ -14,7 +14,7 @@
   --light-gray: #fffefc;
   --dark-grey: #d0cec9;
 
-  --black-rgb: 30,30,30;
+  --black-rgb: rgba(30,30,30,0.9);
 }
 
 @theme inline {
@@ -30,7 +30,7 @@
   }
 
   .skill-container {
-    @apply  bg-(--foreground) text-(--secondary) rounded-lg p-5 text-center
+    @apply bg-(--black) text-(--secondary) rounded-lg p-5 text-center
   }
 
   .icons-container {
@@ -38,19 +38,20 @@
   }
 
   .icon-card {
-    @apply my-10 bg-(--primary) w-[90px] h-[90px] shadow-[-3px_3px_0_0_rgba(30,30,30,0.9)] border-(--black) border
+    box-shadow: -3px 3px var(--black-rgb);
+    @apply my-10 bg-(--primary) w-[90px] h-[90px] border-(--black) border
   }
 
-  .icon-img{
+  .icon-img {
     @apply absolute
   }
 
-  .icon-card:hover .icon-img{
+  .icon-card:hover .icon-img {
     @apply opacity-25
   }
 
   .hidden-text {
-    @apply text-(--foreground) opacity-0 text-sm m-auto
+    @apply text-(--black) opacity-0 text-sm m-auto
   }
 
   .icon-card:hover .hidden-text {
@@ -58,7 +59,8 @@
   }
 
   .full-container {
-    @apply  bg-(--white) border-3 border-(--foreground) shadow-[5px_5px_0_0_rgba(30,30,30,0.9)]
+    box-shadow: 5px 5px var(--black-rgb);
+    @apply bg-(--white) border-3 border-(--black)
   }
 
   .top-bar {
@@ -66,11 +68,11 @@
   }
 
   .bar-title {
-    @apply  font-bold
+    @apply font-bold
   }
 
   .close-container {
-    @apply border-2 border-(--foreground) bg-(--white) m-1
+    @apply border-2 border-(--black) bg-(--white) m-1
   }
 
   .exp-body {
@@ -80,52 +82,52 @@
   .navbar {
     box-shadow: 0 2px #fffdfc, 0 4px #b7eaed;
     z-index: 1000;
-    @apply  fixed w-full bg-(--white) w-fit flex gap-5 px-5 h-fit py-3 font-bold gap-18
+    @apply fixed w-full bg-(--white) w-fit flex gap-5 px-5 h-fit py-3 font-bold gap-18
   }
 
   .nav-button {
     padding: 2px;
-    box-shadow: 
-    -2px -2px var(--light-gray), 
-    -2px 0 var(--light-gray), 
-    0 -2px var(--light-gray), 
-    -4px -4px var(--true-white), 
-    -4px 0 var(--true-white), 
-    0 -4px var(--true-white), 
-    2px 2px var(--dark-grey), 
-    0 2px var(--dark-grey), 
-    2px 0 var(--dark-grey), 
-    2px -2px var(--light-gray), 
-    -2px 2px var(--dark-grey), 
-    -4px 2px var(--true-white), 
-    -4px 4px var(--black), 
-    4px 4px var(--black), 
-    4px 0 var(--black), 
-    0 4px var(--black), 
-    2px -4px var(--true-white), 
-    4px -4px var(--black);
+    box-shadow:
+      -2px -2px var(--light-gray),
+      -2px 0 var(--light-gray),
+      0 -2px var(--light-gray),
+      -4px -4px var(--true-white),
+      -4px 0 var(--true-white),
+      0 -4px var(--true-white),
+      2px 2px var(--dark-grey),
+      0 2px var(--dark-grey),
+      2px 0 var(--dark-grey),
+      2px -2px var(--light-gray),
+      -2px 2px var(--dark-grey),
+      -4px 2px var(--true-white),
+      -4px 4px var(--black),
+      4px 4px var(--black),
+      4px 0 var(--black),
+      0 4px var(--black),
+      2px -4px var(--true-white),
+      4px -4px var(--black);
   }
 
   .nav-button.active {
-    box-shadow:  
-    -2px -2px var(--dark-grey), 
-    -2px 0 var(--dark-grey), 
-    0 -2px var(--dark-grey), 
-    -4px -4px var(--black), 
-    -4px 0 var(--black), 
-    0 -4px var(--black), 
-    2px 2px var(--light-gray), 
-    0 2px var(--light-gray), 
-    2px 0 var(--light-gray),  
-    2px -2px var(--dark-grey), 
-    -2px 2px var(--light-gray), 
-    -4px 2px var(--black), 
-    -4px 4px var(--true-white), 
-    4px 4px var(--true-white), 
-    4px 0 var(--true-white), 
-    0 4px var(--true-white), 
-    2px -4px var(--black), 
-    4px -4px var(--true-white);
+    box-shadow:
+      -2px -2px var(--dark-grey),
+      -2px 0 var(--dark-grey),
+      0 -2px var(--dark-grey),
+      -4px -4px var(--black),
+      -4px 0 var(--black),
+      0 -4px var(--black),
+      2px 2px var(--light-gray),
+      0 2px var(--light-gray),
+      2px 0 var(--light-gray),
+      2px -2px var(--dark-grey),
+      -2px 2px var(--light-gray),
+      -4px 2px var(--black),
+      -4px 4px var(--true-white),
+      4px 4px var(--true-white),
+      4px 0 var(--true-white),
+      0 4px var(--true-white),
+      2px -4px var(--black),
+      4px -4px var(--true-white);
   }
 
   .full-height {
