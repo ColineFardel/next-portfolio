@@ -66,6 +66,11 @@
     @apply bg-(--white) border-3 border-(--black)
   }
 
+  .button-container {
+    box-shadow: -4px 4px var(--black-rgb);
+    @apply w-fit bg-(--secondary) m-3 p-2 border-(--black) border-1
+  }
+
   .top-bar {
     @apply flex justify-between items-center border-b-3 gap-10
   }
@@ -142,13 +147,16 @@
   :root {
     --background: #000000;
     --foreground: #F6F4EF;
-    --white: #000000;
+    
+    --white: #1e1e1e;
     --black: #F6F4EF;
+
     --primary: #41393E;
     --secondary: #668F80;
-    --true-white: #FFF;
-    --light-gray: #fffefc;
-    --dark-grey: #d0cec9;
+
+    --true-white: #000000;
+    --light-gray: #282725;
+    --dark-grey: #4d4a43;
   
     --black-rgb: rgba(246,244,239,0.9);
   }
