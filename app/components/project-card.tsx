@@ -1,4 +1,5 @@
 import GenericButton from "./generic-button";
+import Icon from "./icon";
 import RetroWindow from "./retro-window";
 
 export default function ProjectCard({ project }: any) {
@@ -17,7 +18,7 @@ export default function ProjectCard({ project }: any) {
                 </div>
 
                 <div className="flex justify-end">
-                    <GenericButton link={project.link} data={<img className="w-[40]" src="./github.svg" alt="" />} />
+                    <GenericButton link={project.link} data={<Icon styles="w-[40]" iconName="github" />} />
                 </div>
             </div>
         } />

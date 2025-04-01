@@ -1,18 +1,19 @@
 import { JSX } from "react";
+import Icon from "./icon";
 
 
-export default function RetroWindow({ title, primary, smallTitle, body, extraStyling }: { title: string,smallTitle?: boolean, primary?: boolean, body: JSX.Element, extraStyling?: string }) {
+export default function RetroWindow({ title, primary, smallTitle, body, extraStyling }: { title: string, smallTitle?: boolean, primary?: boolean, body: JSX.Element, extraStyling?: string }) {
 
     const bgColor = primary ? 'bg-(--primary)' : 'bg-(--secondary)';
     const titleSize = smallTitle ? ' text-sm' : ' text-xl';
-    const imgSize = smallTitle ? 'w-[10px]' : 'w-[15px]'
+    const imgSize = smallTitle ? 'w-[10px] h-[10px]' : 'w-[15px] h-[15px]'
 
     return (
         <div className={"full-container " + extraStyling}>
             <div className={'top-bar ' + bgColor}>
                 <div className={"bar-title " + titleSize}>{title}</div>
                 <div className="close-container">
-                    <img className={imgSize} src="./cross.png" alt="" />
+                    <Icon styles={imgSize} iconName="cross" />
                 </div>
             </div>
             {body}
