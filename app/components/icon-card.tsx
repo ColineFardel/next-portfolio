@@ -12,10 +12,10 @@ export default function IconCard({ icon, name, knowledge }: { icon: string, name
             </div>
 
             <div className="hidden-text w-full h-full flex flex-col gap-2 items-center justify-center">
-                <div>{name}</div>
-                <div className="">
-                    {starArray.map((el) => <Icon key={el} styles="inline" iconName="star-full" />)}
-                    {emptyArray.map((el) => <Icon key={el} styles="inline" iconName="star-empty" />)}
+                <div className=" text-[7px] lg:text-base">{name}</div>
+                <div>
+                    {starArray.map((el) => <Icon key={el} styles="inline w-[7px] h-[7px] lg:w-[14px] h-[14px]" iconName="star-full" />)}
+                    {emptyArray.map((el) => <Icon key={el} styles="inline w-[7px] h-[7px] lg:w-[14px] h-[14px]" iconName="star-empty" />)}
                 </div>
             </div>
         </div>
