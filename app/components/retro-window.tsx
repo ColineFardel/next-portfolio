@@ -5,7 +5,7 @@ import Icon from "./icon";
 export default function RetroWindow({ title, primary, smallTitle, body, extraStyling }: { title: string, smallTitle?: boolean, primary?: boolean, body: JSX.Element, extraStyling?: string }) {
 
     const bgColor = primary ? 'bg-(--primary)' : 'bg-(--secondary)';
-    const titleSize = smallTitle ? ' text-sm' : ' text-xl';
+    const titleSize = smallTitle ? ' text-xs sm:text-sm' : ' text-xs sm:text-sm md:text-xl';
     const imgSize = smallTitle ? 'w-[10px] h-[10px]' : 'w-[15px] h-[15px]'
 
     return (

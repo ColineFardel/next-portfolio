@@ -3,11 +3,13 @@ import Title from "./title";
 
 export default function Experiences() {
 
+    const extraStyling = 'w-full sm:w-2/7';
+
     return(
         <section id="experiences" className="h-screen bg-(--secondary) flex flex-col">
             <Title primary title="Experiences"/>
-            <div className="flex justify-around items-center h-full w-[80%] m-auto pb-40">
-                <RetroWindow extraStyling="w-2/7" primary title="Intern" body={
+            <div className="flex flex-col sm:flex-row justify-around items-center h-full lg:w-[80%] sm:m-auto md:pb-40 ">
+                <RetroWindow extraStyling={extraStyling} primary title="Intern" body={
                     <div className="exp-body">
                         <p>C:Windows&gt;company</p>
                         <p>HES-SO Valais-Wallis</p>
@@ -22,7 +24,7 @@ export default function Experiences() {
                         <p>C:Windows&gt;_</p>
                     </div>
                 }/>
-                <RetroWindow extraStyling="w-2/7" primary title="Backend Developer" body={
+                <RetroWindow extraStyling={extraStyling} primary title="Backend Developer" body={
                     <div className="exp-body">
                     <p>C:Windows&gt;company</p>
                     <p>Fiducial Winbiz</p>
@@ -39,7 +41,7 @@ export default function Experiences() {
                     <p>C:Windows&gt;_</p>
                 </div>
                 }/>
-                <RetroWindow extraStyling="w-2/7" primary title="Fullstack Developer" body={
+                <RetroWindow extraStyling={extraStyling} primary title="Fullstack Developer" body={
                     <div className="exp-body">
                     <p>C:Windows&gt;company</p>
                     <p>Utopix</p>

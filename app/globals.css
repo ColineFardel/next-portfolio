@@ -42,7 +42,7 @@
 
   .icon-card {
     box-shadow: -3px 3px var(--black-rgb);
-    @apply my-10 bg-(--primary) w-[90px] h-[90px] border-(--black) border
+    @apply lg:my-10 my-4 bg-(--primary) w-[50px] h-[50px] lg:w-[90px] lg:h-[90px] border-(--black) border
   }
 
   .icon-img {
@@ -68,7 +68,7 @@
 
   .button-container {
     box-shadow: -4px 4px var(--black-rgb);
-    @apply w-fit bg-(--secondary) m-3 p-2 border-(--black) border-1
+    @apply w-fit bg-(--secondary) md:m-3 p-2 border-(--black) border-1
   }
 
   .top-bar {
@@ -84,13 +84,13 @@
   }
 
   .exp-body {
-    @apply p-3 font-bold h-90
+    @apply p-3 font-bold sm:h-90 text-xs md:text-sm
   }
 
   .navbar {
     box-shadow: 0 2px #fffdfc, 0 4px #b7eaed;
     z-index: 1000;
-    @apply fixed w-full bg-(--white) w-fit flex gap-5 px-5 h-fit py-3 font-bold gap-18
+    @apply fixed w-screen bg-(--white) flex px-5 h-fit py-3 font-bold sm:gap-18 gap-[20px] justify-center sm:justify-start
   }
 
   .nav-button {

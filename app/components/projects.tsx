@@ -12,13 +12,13 @@ export default function Projects() {
         },
         {
             title: 'Recipes Website',
-            img: './RecipesImg.png',
+            img: './images/RecipesImg.png',
             description: 'A web app created with Angular to see all my recipes',
             link: 'https://github.com/ColineFardel/angular-recipes',
         },
         {
             title: 'Portfolio',
-            img: './PortfolioImg.png',
+            img: './images/PortfolioImg.png',
             description: 'This portfolio made with NextJs',
             link: 'https://github.com/ColineFardel/next-portfolio',
         },
@@ -27,7 +27,7 @@ export default function Projects() {
     return (
         <section id="projects" className="h-screen flex flex-col">
             <Title title="Projects" />
-            <div className="flex gap-3 p-3 justify-around items-center w-[80%] m-auto">
+            <div className="flex flex-wrap gap-3 p-3 justify-around items-center md:w-[80%] w-full m-auto">
                 {projects.map((project) => <ProjectCard key={project.link} project={project} />)}
             </div>
 

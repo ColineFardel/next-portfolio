@@ -4,8 +4,8 @@ import RetroWindow from "./retro-window";
 
 export default function About() {
   return (
-    <section id="about" className="h-screen flex">
-      <div className="mt-18 grid grid-cols-5 grid-rows-3 p-15">
+    <section id="about" className="h-screen flex md:bg-blue-500">
+      <div className="flex flex-col justify-around mt-18 md:grid md:grid-cols-5 md:grid-rows-3 p-15">
         <RetroWindow extraStyling=" col-span-2 row-span-2 h-[250]" title='Coline Fardel' body={
           <div className="p-3 flex flex-col justify-between items-between h-[90%]">
             <span>I'm a Fullstack developer with almost 3 years of experience. I'm looking for new opportunities to improve myself et become a better developer</span>

@@ -7,7 +7,7 @@ export default function Skills() {
     const data = [
         {
             name: 'Database',
-            nbrCol: 'col-span-4',
+            nbrCol: 'lg:col-span-4',
             stack: [
                 {
                     name: 'Firebase',
@@ -28,7 +28,7 @@ export default function Skills() {
         },
         {
             name: 'Backend',
-            nbrCol: 'col-span-4',
+            nbrCol: 'lg:col-span-4',
             stack: [
                 {
                     name: 'Java',
@@ -49,7 +49,7 @@ export default function Skills() {
         },
         {
             name: 'Frontend',
-            nbrCol: 'col-span-5',
+            nbrCol: 'lg:col-span-5',
             stack: [
                 {
                     name: 'React',
@@ -80,7 +80,7 @@ export default function Skills() {
         },
         {
             name: 'Other',
-            nbrCol: 'col-span-3',
+            nbrCol: 'lg:col-span-3',
             stack: [
                 {
                     name: 'Jira',
@@ -99,10 +99,10 @@ export default function Skills() {
     return (
         <section id="skills" className="h-screen bg-(--secondary) flex flex-col">
             <Title primary title="Skills" />
-            <div className="grid grid-cols-8 grid-rows-2 gap-4 my-auto w-[70%] m-auto pb-30">
+            <div className="lg:grid lg:grid-cols-8 lg:grid-rows-2 flex flex-col items-center gap-4 my-auto lg:w-[70%] w-full m-auto lg:pb-30">
                 {data.map((skillData) =>
-                    <RetroWindow key={skillData.name} title={skillData.name} extraStyling={skillData.nbrCol} primary body={
-                        <div className="flex m-3 justify-around items-center">
+                    <RetroWindow key={skillData.name} title={skillData.name} extraStyling={skillData.nbrCol + ' w-fit lg:w-auto'} primary body={
+                        <div className="flex gap-[20px] px-5 lg:px-o lg:gap-0 lg:m-3 justify-around items-center">
                             {skillData.stack.map((item) => <IconCard key={item.icon} icon={item.icon} name={item.name} knowledge={item.knowledge} />)}
                         </div>
                     } />
