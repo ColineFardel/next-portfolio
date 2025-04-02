@@ -17,7 +17,7 @@
   --light-gray: #fffefc;
   --dark-grey: #d0cec9;
 
-  --black-rgb: rgba(30,30,30,0.9);
+  --black-rgb: rgba(30, 30, 30, 0.9);
 }
 
 @theme inline {
@@ -151,7 +151,7 @@
   :root {
     --background: #000000;
     --foreground: #F6F4EF;
-    
+
     --white: #1e1e1e;
     --black: #F6F4EF;
 
@@ -161,8 +161,54 @@
     --true-white: #000000;
     --light-gray: #282725;
     --dark-grey: #4d4a43;
-  
-    --black-rgb: rgba(246,244,239,0.9);
+
+    --black-rgb: rgba(246, 244, 239, 0.9);
+  }
+
+  .nav-button {
+    box-shadow:
+      -2px -2px var(--dark-grey),
+      -2px 0 var(--dark-grey),
+      0 -2px var(--dark-grey),
+      -4px -4px var(--black),
+      -4px 0 var(--black),
+      0 -4px var(--black),
+      2px 2px var(--light-gray),
+      0 2px var(--light-gray),
+      2px 0 var(--light-gray),
+      2px -2px var(--dark-grey),
+      -2px 2px var(--light-gray),
+      -4px 2px var(--black),
+      -4px 4px var(--true-white),
+      4px 4px var(--true-white),
+      4px 0 var(--true-white),
+      0 4px var(--true-white),
+      2px -4px var(--black),
+      4px -4px var(--true-white);
+  }
+
+  .nav-button.active {
+    box-shadow:
+      -2px -2px var(--light-gray),
+      -2px 0 var(--light-gray),
+      0 -2px var(--light-gray),
+      -4px -4px var(--true-white),
+      -4px 0 var(--true-white),
+      0 -4px var(--true-white),
+      2px 2px var(--dark-grey),
+      0 2px var(--dark-grey),
+      2px 0 var(--dark-grey),
+      2px -2px var(--light-gray),
+      -2px 2px var(--dark-grey),
+      -4px 2px var(--true-white),
+      -4px 4px var(--black),
+      4px 4px var(--black),
+      4px 0 var(--black),
+      0 4px var(--black),
+      2px -4px var(--true-white),
+      4px -4px var(--black);
+
+
   }
 }
 
